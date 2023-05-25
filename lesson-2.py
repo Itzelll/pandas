@@ -1,5 +1,9 @@
 import pandas as pd
 
+reviews = pd.read_csv("../input/wine-reviews/winemag-data-130k-v2.csv", index_col=0)
+
+#----------------------------------------------------------------
+#1
 desc = reviews.description
 
 
@@ -26,7 +30,7 @@ sample_reviews = reviews.iloc[indices]
 
 #----------------------------------------------------------------
 #6
-ndice = [0,1,10,100]
+indice = [0,1,10,100]
 df = reviews.loc[indice, ['country', 'province', 'region_1', 'region_2']]
 
 
